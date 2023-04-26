@@ -22,6 +22,7 @@ h1 {
 }
 
 .box3 {
+  width: 100px;
   border: 1rem;
   padding: 1rem;
 }
