@@ -13,6 +13,43 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <script src="./app.js"></script>
+    <script>
+      function hello() {
+        return "Hello world！";
+      }
+      document.write("<br>" + hello());
+      document.write("<br>" + hello());
+
+      function sayHi(name) {
+        return name + "，Hello world！";
+      }
+
+      document.write("<br>" + sayHi("Tom"));
+      document.write("<br>" + sayHi("John"));
+
+      function add(number) {
+        return number * 2;
+      }
+      document.write("<br>" + add(2) + " ");
+      document.write("<br>" + add(4) + " ");
+      document.write("<br>" + add(8) + " ");
+
+      function addTwo(number1, number2) {
+        return number1 + number2;
+      }
+
+      document.write("<br>" + addTwo(5, 10) + " ");
+      document.write("<br>" + addTwo(4, 20) + " ");
+      document.write("<br>" + addTwo(9, 100) + " ");
+
+      function addNumberAndString(number4, number5, number6) {
+        let number3 = number4 + number5;
+        return "第一加第二個參數加總為" + number3 + "第三個參數為" + number6;
+      }
+
+      document.write("<br>" + addNumberAndString(5, 10, 30) + " ");
+      document.write("<br>" + addNumberAndString(4, 20, 22) + " ");
+      document.write("<br>" + addNumberAndString(9, 100, 44) + " ");
+    </script>
   </body>
 </html>
