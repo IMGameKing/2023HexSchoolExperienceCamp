@@ -1,0 +1,35 @@
+/* CSS 程式碼 */
+
+.orange {
+  color: orange;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.green {
+  color: green;
+}
+
+b {
+  background-color: violet;
+  color: white;
+}
+
+div {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+img {
+  line-height: 64px;
+}
