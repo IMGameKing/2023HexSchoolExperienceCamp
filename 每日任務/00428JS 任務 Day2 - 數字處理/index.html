@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="這是一個簡單講述...資訊的網頁" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="author" content="LeeYuRu" />
+    <title>網站名稱</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <b
+        ><strong
+          ><h1 style="color: red; font-size: 3rem">
+            JS 任務 Day2 - 數字處理
+          </h1></strong
+        ></b
+      >
+    </div>
+    <div>
+      <h1>題目一：平方計算</h1>
+      <script>
+        // // input 輸入
+        // square(3)
+        // square(9)
+        // square(20)
+        // // output 輸出
+        // 9
+        // 81
+        // 400
+
+        function square(number1) {
+          return number1 ** 2;
+        }
+
+        document.write(square(3));
+        document.write("<br>" + square(9));
+        document.write("<br>" + square(20));
+      </script>
+    </div>
+
+    <div>
+      <h1>題目二：數學邏輯題</h1>
+      <script>
+        //// input 輸入
+        // calculate(5,7,3)
+        // calculate(9,8,7)
+        // calculate(5,2,0)
+        // calculate(9,9,33)
+
+        // // output 輸出
+        // 9
+        // 10
+        // 7
+        // -15
+
+        function calculate(number2, number3, number4) {
+          return number2 + number3 - number4;
+        }
+
+        document.write(calculate(5, 7, 3));
+        document.write("<br>" + calculate(9, 8, 7));
+        document.write("<br>" + calculate(5, 2, 0));
+        document.write("<br>" + calculate(9, 9, 33));
+      </script>
+    </div>
+
+    <div>
+      <h1>題目三：四捨五入題</h1>
+      <script>
+        // // input 輸入
+        // rounding(3.9988);
+        // rounding(3984.222);
+        // rounding(77.777);
+
+        // // output 輸出
+        // 4.00;
+        // 3984.22;
+        // 77.78;
+
+        function rounding(number5) {
+          return number5.toFixed(2);
+        }
+
+        document.write(rounding(3.9988));
+        document.write("<br>" + rounding(3984.222));
+        document.write("<br>" + rounding(77.777));
+      </script>
+    </div>
+
+    <div>
+      <h1>題目四：字串轉數字</h1>
+      <script>
+        // // input 輸入
+        // parseNumber("2.33")
+        // parseNumber("Hello!!")
+        // parseNumber("30000")
+
+        // // output 輸出
+        // 2.33
+        // NaN
+        // 30000
+
+        function parseNumber(number6) {
+          return Number(number6);
+        }
+
+        document.write(parseNumber("2.33"));
+        document.write("<br>" + parseNumber("Hello!!"));
+        document.write("<br>" + parseNumber("30000"));
+      </script>
+    </div>
+
+    <div>
+      <h1>題目五：被二整除</h1>
+      <script>
+        // // input 輸入
+        // divisible(2)
+        // divisible(3)
+        // divisible(77)
+        // divisible(88)
+
+        // // output 輸出
+        // 0
+        // 1
+        // 1
+        // 0
+
+        function divisible(number7) {
+          return number7 % 2;
+        }
+
+        document.write(divisible(2));
+        document.write("<br>" + divisible(3));
+        document.write("<br>" + divisible(77));
+        document.write("<br>" + divisible(88));
+      </script>
+    </div>
+  </body>
+</html>
