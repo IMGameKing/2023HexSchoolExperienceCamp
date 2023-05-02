@@ -17,153 +17,124 @@
       <b
         ><strong
           ><h1 style="color: red; font-size: 3rem">
-            JS 任務 Day3 - 字串設計
+            JS 任務 Day4 - 比較與邏輯運算子
           </h1></strong
         ></b
       >
     </div>
     <div>
-      <h1>題目一：字串長度計算</h1>
+      <h1>題目一：比大小</h1>
       <script>
         // // input 輸入
-        // checkStringLength("Hello")
-        // checkStringLength("my name is Tom！")
-
+        // higher(3,2)
+        // higher(100,299)
+        // higher(8,2.5)
         // // output 輸出
-        // 5
-        // 15
+        // true
+        // false
+        // true
 
-        function checkStringLength(string1) {
-          return string1.length;
+        function higher(number1, number2) {
+          return number1 > number2;
         }
 
-        document.write(checkStringLength("Hello"));
-        document.write("<br>" + checkStringLength("my name is Tom！"));
+        document.write(higher(3, 2));
+        document.write("<br>" + higher(100, 299));
+        document.write("<br>" + higher(8, 2.5));
       </script>
     </div>
 
     <div>
-      <h1>題目二：英文強制小寫</h1>
+      <h1>題目二：布林反轉</h1>
       <script>
         // // input 輸入
-        // lowerCase("FOKFF@gmail.com")
-        // lowerCase("gonSakpm@gmail.com")
-
+        // booleanToggle(true)
+        // booleanToggle(false)
         // // output 輸出
-        // "fokff@gmail.com"
-        // "gonsakpm@gmail.com"
+        // false
+        // true
 
-        function lowerCase(string2) {
-          return string2.toLowerCase();
+        function booleanToggle(boolean) {
+          return !boolean;
         }
 
-        document.write(lowerCase("FOKFF@gmail.com"));
-        document.write("<br>" + lowerCase("gonSakpm@gmail.com"));
+        document.write(booleanToggle(true));
+        document.write("<br>" + booleanToggle(false));
       </script>
     </div>
 
     <div>
-      <h1>題目三：去除掉段落的左右空白</h1>
+      <h1>題目三：型別判斷</h1>
       <script>
         // // input 輸入
-        // trimString("    hi, mom!  ")
-        // trimString(" aa@gmail.com  ")
-
+        // checkType(3.33)
+        // checkType("Hello")
+        // checkType(true)
+        // checkType([1,2,3])
         // // output 輸出
-        // "hi, mom!"
-        // "aa@gmail.com"
+        // "number"
+        // "string"
+        // "boolean"
+        // "object"
 
-        function trimString(string3) {
-          return string3.trim();
+        function checkType(type) {
+          return typeof type;
         }
 
-        document.write(trimString("    hi, mom!  "));
-        document.write("<br>" + trimString(" aa@gmail.com  "));
+        document.write(checkType(3.33));
+        document.write("<br>" + checkType("Hello"));
+        document.write("<br>" + checkType(true));
+        document.write("<br>" + checkType([1, 2, 3]));
       </script>
     </div>
 
     <div>
-      <h1>題目四：字串依照條件轉陣列</h1>
+      <h1>題目四：打八折後，是否總價大於 100 元</h1>
       <script>
         // // input 輸入
-        // splitString("black,red,white")
-        // splitString("coffee,tea")
-
+        // onSale(200)
+        // onSale(150)
+        // onSale(125)
+        // onSale(100)
         // // output 輸出
-        // // ["black","red","white"]
-        // // ["coffee","tea"]
+        // true
+        // true
+        // false
+        // false
 
-        // var txt = "a,b,c,d,e";   // 字符串
-        // txt.split(",");          // 用逗号分隔
-        // txt.split(" ");          // 用空格分隔
-        // txt.split("|");          // 用竖线分隔
-
-        function splitString(string4) {
-          return string4.split(",");
+        function onSale(totalPrice) {
+          return totalPrice * 0.8 > 100;
         }
 
-        document.write(splitString("black,red,white"));
-        document.write("<br>" + splitString("coffee,tea"));
+        document.write(onSale(200));
+        document.write("<br>" + onSale(150));
+        document.write("<br>" + onSale(125));
+        document.write("<br>" + onSale(100));
       </script>
     </div>
 
     <div>
-      <h1>題目五：切割市區字串(.substring)</h1>
+      <h1>題目五：是否大於 200，且符合會員條件</h1>
       <script>
         // // input 輸入
-        // getArea("高雄市前鎮區一心二路33號");
-        // getArea("高雄市新興區新興路66號");
-
+        // checkVIP(300,true)
+        // checkVIP(0,true)
+        // checkVIP(30000,false)
+        // checkVIP(888,true)
         // // output 輸出
-        // "前鎮區"
-        // "新興區"
+        // true
+        // false
+        // false
+        // true
 
-        function getArea(string5) {
-          return string5.substring(3, 6);
+        function checkVIP(point, boolean1) {
+          return point > 200 && boolean1 == true;
         }
 
-        document.write(getArea("高雄市前鎮區一心二路33號"));
-        document.write("<br>" + getArea("高雄市新興區新興路66號"));
-      </script>
-    </div>
-
-    <div>
-      <h1>題目五之二：切割市區字串(.substr)</h1>
-      <script>
-        // // input 輸入
-        // getArea("高雄市前鎮區一心二路33號");
-        // getArea("高雄市新興區新興路66號");
-
-        // // output 輸出
-        // "前鎮區"
-        // "新興區"
-
-        function getArea(string5) {
-          return string5.substr(3, 3);
-        }
-
-        document.write(getArea("高雄市前鎮區一心二路33號"));
-        document.write("<br>" + getArea("高雄市新興區新興路66號"));
-      </script>
-    </div>
-
-    <div>
-      <h1>題目五之三：切割市區字串(.slice)</h1>
-      <script>
-        // // input 輸
-        // getArea("高雄市前鎮區一心二路33號");
-        // getArea("高雄市新興區新興路66號");
-
-        // // output 輸出
-        // "前鎮區"
-        // "新興區"
-
-        function getArea(string5) {
-          return string5.slice(3, 6);
-        }
-
-        document.write(getArea("高雄市前鎮區一心二路33號"));
-        document.write("<br>" + getArea("高雄市新興區新興路66號"));
+        document.write(checkVIP(300, true));
+        document.write("<br>" + checkVIP(0, true));
+        document.write("<br>" + checkVIP(30000, false));
+        document.write("<br>" + checkVIP(888, true));
       </script>
     </div>
   </body>
