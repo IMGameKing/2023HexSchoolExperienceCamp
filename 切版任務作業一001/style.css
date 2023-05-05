@@ -1,0 +1,64 @@
+/* 引入思源黑體 API */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+/* 將所有元素的字型設定成思源黑體，並讓文字以更平滑的方式來呈現 */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 25px;
+}
+
+.ai_tool_img {
+  border-radius: 16px 16px 0 0;
+}
+
+.card__title {
+  padding: 25px;
+}
+
+.card__title h2 {
+  margin-bottom: 12px;
+}
+
+.card__title p {
+  color: #525252;
+}
+
+.card__aimodel {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.card__hashtag {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
