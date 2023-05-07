@@ -128,23 +128,48 @@ table {
   border-spacing: 0;
 }
 
+/* Hi，gameking780204：
+
+我是六角學院助教 JasonLu :
+
+
+
+作業練習得很棒喔 !
+
+有善用 CSS 來優化網頁樣式 ~
+
+
+
+以下提供你一些修改建議：
+
+文字水平居中建議改成使用 CSS 屬性 text-align: center; ，不建議使用 HTML 屬性 align="center"。HTML align 屬性是 HTML4 支援的語法，目前 HTML5 已不支援。在頁面可以正常置中是因為 Chrome 瀏覽器有偵測到語法，會轉換並套用樣式，但為了避免在其他瀏覽器 ( 如 firefox 、safari ... 等 ) 沒有正確套用，還是建議使用 CSS 屬性 text-align: center;。
+可以多嘗試使用類別選擇器與後代選擇器，例如 header 標籤選擇器可以改成 .headerSection ； p 標籤選擇器可以改成 .mainSection p
+
+
+
+
+學習沒有問題的話，可以繼續往後面的章節進行囉！
+
+如果還有不懂的地方也歡迎隨時發問，我們都會在線上等你～ */
+
 body {
   width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 
-header {
+.headerSection {
   border: solid 1px black;
   padding: 30px;
 }
 
-main {
+.mainSection {
   border: solid 3px red;
 }
 
-p {
-  text-align: center;
+.mainSection p {
+  /* text-align: center; */
+
   margin: 20px;
 }
 
@@ -163,8 +188,14 @@ p {
   padding-right: 10px;
 }
 
-footer {
+.footerSection {
   padding: 20px;
   width: 810px;
   background-color: pink;
 }
+
+.footerSection p {
+  text-align: center;
+  margin: 20px;
+}
+/* HTML align 屬性是 HTML4 支援的語法，目前 HTML5 已不支援。 */
