@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 218px;
+  margin: 0 auto;
+  border: 1px solid #000000;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+/* 可以使用 order 屬性來調整 flex 子元素的排序，
+order 預設值為 0，會依照 flex-direction 的方向依序排序 */
+
+.one {
+  background-color: #0a5fa3;
+  order: 3;
+}
+
+.two {
+  background-color: #1dba8d;
+  order: 1;
+}
+
+.three {
+  background-color: #e5c131;
+  order: 2;
+}
+
+.four {
+  background-color: #e74614;
+  order: 4;
+}
