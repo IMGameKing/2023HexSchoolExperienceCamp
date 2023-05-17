@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1920px;
+}
+
+.card {
+  width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-list {
+  width: 416px;
+  border: 1px solid #f2f2f2;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  over-flow: hidden;
+}
+
+.card-title {
+  padding: 20px 32px;
+  flex-grow: 1;
+}
+
+.card-title h2 {
+  font-size: 20px;
+  color: #020202;
+  font-weight: 900;
+  font-family: "Noto Sana TC";
+  margin-bottom: 20px;
+}
+
+.card-title p {
+  font-size: 14px;
+  color: #525252;
+  font-weight: 400;
+  font-family: "Noto Sana TC";
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.card-ai .ai {
+  font-size: 16px;
+  color: #020202;
+  font-weight: 700;
+  font-family: "Noto Sana TC";
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Noto Sana TC";
+  color: #020202;
+}
+
+.card-ai,
+.card-link {
+  padding: 20px 32px;
+  border-top: 1px solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-detail {
+  margin-top: auto;
+}
+
+.material-icons {
+  text-decoration: none;
+  color: black;
+}
+
+.img {
+  overflow: hidden;
+}
+
+.img img {
+  transform: scale(1, 1);
+  transition: all 0.4s ease-out;
+}
+
+.img:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+@media screen and (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
